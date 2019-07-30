@@ -1,9 +1,9 @@
-Template
-========
+Authereum
+=========
 
 .. image:: https://readthedocs.org/projects/authereum/badge/?version=latest
-:target: https://authereum.readthedocs.io/en/latest/?badge=latest
-:alt: Documentation Status
+  :target: https://authereum.readthedocs.io/en/latest/?badge=latest
+  :alt: Documentation Status
 
 $project allows your dapp to have a painless onboarding experience for your users. Authereum
 

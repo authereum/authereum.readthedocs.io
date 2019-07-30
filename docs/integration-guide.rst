@@ -2,7 +2,7 @@
 Integration Guide
 =================
 
-Import the :bash:`authereum` NPM package and initialize the provider for web3::
+Import the ``authereum`` NPM package and initialize the provider for web3::
 
   import { AuthereumProvider } from 'authereum'
   import Web3 from 'web3'
