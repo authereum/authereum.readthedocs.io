@@ -12,7 +12,10 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   *
+   installation.rst
+   usage.rst
+   integration-guide.rst
+   contributing.rst
 
 
 

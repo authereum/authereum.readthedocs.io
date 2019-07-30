@@ -1,27 +1,31 @@
 Template
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+.. image:: https://readthedocs.org/projects/authereum/badge/?version=latest
+:target: https://authereum.readthedocs.io/en/latest/?badge=latest
+:alt: Documentation Status
 
-Look how easy it is to use:
+$project allows your dapp to have a painless onboarding experience for your users. Authereum
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
+Integration the authereum we3 provider is as easy:
+
+    import { AuthereumProvider } from 'authereum'
+
+    const web3 = new Web3(new AuthereumProvider('kovan'))
 
 Features
 --------
 
-- Be awesome
-- Make things faster
+- Fully non-custodial
+- Contract-based accounts
+- Easy integration
 
 Installation
 ------------
 
 Install $project by running:
 
-    install project
+    npm install authereum
 
 Contribute
 ----------
