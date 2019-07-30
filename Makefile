@@ -1,3 +1,6 @@
+install:
+	pip install sphinx-rtd-theme
+
 build:
 	(cd docs && make html)
 
