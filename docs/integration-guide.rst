@@ -2,7 +2,18 @@
 Integration Guide
 =================
 
-Import the ``authereum`` NPM package and initialize the provider for web3::
+Import the ``authereum`` NPM package and initialize it::
+
+  import Authereum from 'authereum'
+  import Web3 from 'web3'
+
+  const authereum = new Authereum('kovan')
+
+  // get provider and initialize web3
+  const provider = authereum.getProvider()
+  const web3 = new Web3(provider)
+
+Import the ``authereum`` NPM package and initialize the provider directory for web3::
 
   import { AuthereumProvider } from 'authereum'
   import Web3 from 'web3'
@@ -10,11 +21,17 @@ Import the ``authereum`` NPM package and initialize the provider for web3::
   const provider = new AuthereumProvider('kovan')
   const web3 = new Web3(provider)
 
-You may also inject the web3 global using the authereum provider into the page::
+  // login to authereum
+  await provider.enable()
 
-  import { injectWeb3 } from 'authereum'
 
-  injectWeb3('kovan')
+Example of getting the balance::
 
-  // window.web3 now exists
+  import Authereum from 'authereum'
+  import Web3 from 'web3'
 
+  const authereum = new Authereum('kovan')
+  const web3 = new Web3(authereum.getProvider())
+
+  const balance = await web3.eth.getBalance()
+  console.log(balance)

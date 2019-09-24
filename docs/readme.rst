@@ -9,9 +9,11 @@ Authereum allows your dapp to have a painless onboarding experience for your use
 
 Integration the authereum we3 provider is as easy:
 
-    import { AuthereumProvider } from 'authereum'
+    import Authereum from 'authereum'
 
-    const web3 = new Web3(new AuthereumProvider('kovan'))
+    const authereum = new Authereum('kovan')
+    const web3 = new Web3(authereum.getProvider())
+
 
 Features
 --------
