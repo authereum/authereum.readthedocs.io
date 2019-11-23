@@ -6,19 +6,7 @@
 Welcome to Authereum's documentation!
 ==================================================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-
-   readme.rst
-   installation.rst
-   usage.rst
-   integration-guide.rst
-   contributing.rst
-
-
+NOTICE: Authereum documentation has been moved to https://developers.authereum.org
 
 Indices and tables
 ==================
